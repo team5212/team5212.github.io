@@ -1,0 +1,188 @@
+.members-container>div {
+   display:inline-block;
+   vertical-align:top;
+   padding: 5px;
+}
+
+.image-title{
+   position:absolute;
+   text-align:center;
+   width: 100%;
+   top:5%;
+   color:white;
+   font-weight: 300;
+   transition: 0.6s;
+   opacity:0;
+   font-size: 50px;
+}
+
+.badge-container{
+   cursor: pointer;
+}
+
+.badge {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  font-size: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.4s;
+  -ms-transform: scale(0,0);
+  -webkit-transform: scale(0,0);
+  transform: scale(0, 0);
+}
+
+.badgetitle{
+   color: #fff;
+   position: relative;
+   top: 80px;
+}
+
+.hovered{
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header{
+   font-weight: 300;
+}
+
+.donate-button{
+   font-weight:300;
+   color:black;
+   font-size:50px;
+}
+
+.img-circle {
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+   margin-left:10px;
+   margin-right:10px;
+   width: 150px;
+   height: 150px;
+   box-shadow: 3px 3px 8px #888888;
+   transition: 0.4s;
+   cursor: zoom-in;
+}
+
+.img-circle:hover{
+   width:190px;
+   height:190px;
+   margin-left:-10px;
+   margin-right:-10px;
+}
+
+.img-circle.enlarged{
+   width:200px;
+   height:200px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+
+.members-container > div {
+   min-height: 275px;
+}
+
+.member-label{
+   font-weight:300; font-size: 30px;
+}
+
+.member-title{
+   font-weight:300; font-size: 15px;
+}
+
+.member-section-label{
+   font-weight:300; font-size: 45px;
+}
+
+.parallax-container {
+   height: 600px;
+}
+
+@media (max-width: 900px) {
+   .parallax-container {
+      height: 300px;
+   }
+}
+
+@media (max-width: 800px) {
+   .members-container > div {
+      min-height: 0px;
+   }
+
+  .badge{
+     -ms-transform: scale(0,0) !important;
+     -webkit-transform: scale(0,0) !important;
+     transform: scale(0, 0) !important;
+  }
+
+  .img-circle{
+     width:75px;
+     height:75px;
+     margin-left:0px;
+     margin-right:0px;
+  }
+
+  .img-circle:hover{
+     width:75px;
+     height:75px;
+     margin-left:0px;
+     margin-right:0px;
+  }
+
+  .img-circle.enlarged{
+     width:75px;
+     height:75px;
+  }
+
+  .member-label{
+     font-weight:300; font-size: 20px;
+  }
+
+  .member-title{
+     font-weight:300; font-size: 10px;
+  }
+
+  .member-section-label{
+     font-weight:300; font-size: 30px;
+  }
+}
+
+.shade{
+   display: none;
+   width: 100%;
+   height:100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+}
+
+.real-shade{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.7);
+   opacity: 0;
+}
+
+.shade>.img-circle{
+   box-shadow: 0px 0px 0px black;
+}
+
+.real-shade>.close-button{
+   position: absolute;
+   top: 60px;
+   right: 0px;
+   width:100px;
+   font-size: 60px;
+   text-align: right;
+   cursor: pointer;
+}
+
+.img-caption{
+   font-size: 16px;
+}
